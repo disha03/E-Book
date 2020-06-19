@@ -7,49 +7,66 @@
            
             
             .ul {
-            list-style-type:none;
-            overflow: hidden;
-            background-color: #333;
-            margin:0px;
-            padding:3%;
-            padding-left:10%;
-            padding-right:25%;
-            font-size: 27px;
-            text-decoration:none;
-            }
+                list-style-type:none;
+                overflow: hidden;
+                background-color: #333;
+                margin:0px;
+                padding:3%;
+                padding-left:10%;
+                padding-right:25%;
+                font-size: 27px;
+                text-decoration:inherit;
+                }
             .con{
                 color: white;
                 text-decoration:none;
-            margin:3%;
-    
-            }
+                margin:3%;
+                }
+            .con {
+                animation-duration: 4s;
+                animation-name: slidein;
+                animation-iteration-count: 1;
+                }
+
+            @keyframes slidein {
+                  0% {
+                    margin-left: 0%;
+                  }
+                  25%{
+                    text-decoration: underline #ffdead dotted;
+                  }
+                  50%{
+                    margin left:50px;
+                    text-decoration: underline #ffdead dotted;
+                  }
+                  75%{
+                    text-decoration: underline #ffdead solid;
+                  }
+                  
+                }
             a:hover {
-            background-color: #111;
-            padding:5px;
-            border-bottom: 1px dotted white;
-            text-align:center;
-            transition: 1s ease-in 0.5s;
-
-
-            }
-            @media screen and (max-width: 900px) {
-            span{
-                float:left;
-                text-align:center;
-                width:125%;
-                padding:1%;
-            }
-            a:hover {
-            background-color: #111;
-            padding:5px;
-            border:none;
-            border-bottom: 0.5px dotted white;
-            padding-left:15%;
-            padding-right:15%;
-            text-align:center;
-
-            }
-}
+                    background-color: #111;
+                    text-align:center;
+                    transition: 1s linear 0s;
+                    }
+            @media screen and (max-width: 1150px) {
+                                                    span{
+                                                        float:left;
+                                                        text-align:center;
+                                                        width:125%;
+                                                        padding:1%;
+                                                        font-size:25px;
+                                                    }
+                                                    a:hover {
+                                                        background-color: #111;
+                                                        padding:2px;
+                                                        border:none;
+                                                        border-bottom: 0.5px dotted white;
+                                                        padding-left:5%;
+                                                        padding-right:5%;
+                                                        text-align:center;
+                                                            }
+                                                }
 
             body{
                 margin:0px;
