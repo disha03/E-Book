@@ -2,42 +2,55 @@
 <html>
     <head>
         <title>Mainpage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
            
             
             .ul {
             list-style-type:none;
-            margin-top: 0px;
-            padding: 45px;
             overflow: hidden;
             background-color: #333;
-            }
-
-            .con {
-            float: left;
-            }
-
-            li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 10px 35px;
-            margin:8px;
-            margin-top:0px;
+            margin:0px;
+            padding:3%;
+            padding-left:10%;
+            padding-right:25%;
+            font-size: 27px;
             text-decoration:none;
-            font-size: 25px;
             }
-            li a:hover {
+            .con{
+                color: white;
+                text-decoration:none;
+            margin:3%;
+    
+            }
+            a:hover {
             background-color: #111;
+            padding:5px;
+            border-bottom: 1px dotted white;
+            text-align:center;
+            transition: 1s ease-in 0.5s;
+
+
             }
-            #nav{
-                font-size: 35px;
-                padding-top:0px;
-                margin-right: 25px;
+            @media screen and (max-width: 900px) {
+            span{
+                float:left;
+                text-align:center;
+                width:125%;
+                padding:1%;
             }
-            .nava{
-                margin-left:330px;
+            a:hover {
+            background-color: #111;
+            padding:5px;
+            border:none;
+            border-bottom: 0.5px dotted white;
+            padding-left:15%;
+            padding-right:15%;
+            text-align:center;
+
             }
+}
+
             body{
                 margin:0px;
                 background-image: url("https://journeysmobilevet.com/wp-content/uploads/2016/06/Background-light-grey.jpg");
@@ -48,13 +61,12 @@
     <body>
        <div>
         <ul class="ul">
-            <li class="con"><a href="#" id=nav>E-book</a></li>
-            <li class="con"><a href="{% url 'mainpage' %}">Home</a></li>
-            <li class="con"><a href="#">Books</a></li>
-            <li class="con"><a href="#contact">Contact</a></li>
-            <li class="con"><a href="#about">About</a></li>
-            <li class="con"><a href="{% url 'login' %}" class="nava">Login</a></li>
-            <li class="con"><a href="{% url 'register' %}" >Signup</a></li>
+            <span><a href="{% url 'mainpage' %}" class="con">Home</a></span>
+            <span><a href="#" class="con">Books</a></span>
+            <span><a href="#contact"  class="con">Contact</a></span>
+            <span ><a href="#about"  class="con">About</a></span>
+            <span ><a href="{% url 'login' %}"  class="con"  >Login</a></span>
+            <span ><a href="{% url 'register' %}"  class="con" >Signup</a></span>
           </ul>
         </div>
         <br>
