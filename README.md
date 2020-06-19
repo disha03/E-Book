@@ -1,1 +1,2 @@
 # mypro
+mainpage/templates/home
