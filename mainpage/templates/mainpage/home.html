@@ -7,13 +7,13 @@
            
             
             .ul {
+                position:relative;
                 list-style-type:none;
                 overflow: hidden;
                 background-color: #333;
                 margin:0px;
                 padding:3%;
                 padding-left:10%;
-                padding-right:25%;
                 font-size: 27px;
                 text-decoration:inherit;
                 }
@@ -23,49 +23,81 @@
                 margin:3%;
                 }
             .con {
-                animation-duration: 4s;
+                animation-duration: 1.5s;
                 animation-name: slidein;
                 animation-iteration-count: 1;
+                animation-fill-mode:forwards;
                 }
 
             @keyframes slidein {
                   0% {
-                    margin-left: 0%;
+                    margin:2%;
                   }
                   25%{
                     text-decoration: underline #ffdead dotted;
+                    
                   }
                   50%{
-                    margin left:50px;
                     text-decoration: underline #ffdead dotted;
+                    
                   }
                   75%{
                     text-decoration: underline #ffdead solid;
+                    
                   }
-                  
+                  100%{
+                    margin:1%;
+                  }
                 }
-            a:hover {
+            .con:hover {
                     background-color: #111;
                     text-align:center;
-                    transition: 1s linear 0s;
+                    padding:0.3%;
                     }
-            @media screen and (max-width: 1150px) {
+            footer{
+                position: fixed;
+                bottom: 0;
+                left:0;
+                width:100%;
+                font-size:20px;
+                float:none;
+                text-align:center;
+                padding:1%;
+                background-color: #333;
+                overflow :hidden;
+
+            }
+            .sub{
+                position: relative;
+                  float: right;
+                  opacity: 70%;
+                  border-width:0px;
+                  border:none;
+                }
+            @media screen and (max-width: 800px) {
                                                     span{
+                                                        position:relative;
+                                                        text-align:left;
+                                                        width:100%;
                                                         float:left;
-                                                        text-align:center;
-                                                        width:125%;
                                                         padding:1%;
                                                         font-size:25px;
                                                     }
                                                     a:hover {
                                                         background-color: #111;
-                                                        padding:2px;
                                                         border:none;
                                                         border-bottom: 0.5px dotted white;
-                                                        padding-left:5%;
-                                                        padding-right:5%;
+                                                        padding:2px;
                                                         text-align:center;
+                                                        transition:none;
                                                             }
+                                                    .con{
+                                                        animation:none;
+                                                    }
+                                                    footer{
+                                                        font-size:10px;
+                                                        color:white;
+                                                    }
                                                 }
 
             body{
@@ -84,9 +116,13 @@
             <span ><a href="#about"  class="con">About</a></span>
             <span ><a href="{% url 'login' %}"  class="con"  >Login</a></span>
             <span ><a href="{% url 'register' %}"  class="con" >Signup</a></span>
+            <div class="sub"><input type="text" placeholder="Search.." style="padding:7px;" >
+            <button type="submit" style="padding:6px;"><a href="#">Go</a></button>
+        </div>
           </ul>
         </div>
         <br>
         {% block content %}{% endblock %}
+        <footer>© Copyrights 2020 design by saira</footer>
     </body>
 </html>
