@@ -1,0 +1,37 @@
+{% extends "mainpage/home.html" %}
+{% block content %}
+<style>
+	    #Div{
+				font-size:45px;
+				position:relative;
+				width:auto;
+				padding-left:5.5%;
+
+        }
+        #Div{
+         		animation-duration: 1.5s;
+                animation-name: slide;
+                animation-iteration-count: 1;
+                animation-fill-mode:forwards;
+         }
+            @keyframes slide {
+                  0% {
+                      transform: translateX(30px);
+                      display:block;
+                      }
+                 
+                  100%{
+                    transform: translateX(0px);
+                    display:visible;
+                  }
+                }
+                 @media screen and (max-width: 600px) {
+                                                    #Div{
+                                                        font-size:25px;
+                                                        animation:none;
+                                                        text-align:center;
+                                                    }
+                                                }
+</style>
+	<div id="Div" >Welcome to E-book</div>
+{% endblock content %}
