@@ -1,0 +1,26 @@
+{% extends "mainpage/home.html" %}
+{% block content %}
+<style>
+	img{
+		width:250px;height:300px;padding:20px;overflow:hidden;position:relative;
+
+	}
+	.book{
+		width:100%;
+	}
+	footer{
+		position:relative;
+		
+	}
+	</style>
+<div class="book">
+<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfuyEDNZF9Vvd7Ng_r0H8OvtojqF4asykMeBKP5zsgWWpWS3qV" alt="Harry Potter 1" >
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQonVotG4wBf9-cvKmdGf9UIM9ITHMfexp-ZtD_9xAkx9m1fKtR" alt="Harry Potter 2" >
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxCq_bH4zbVJfhElY0cpceiteJwNKdpK9geEtopx3qNfBAWvzh" alt="Harry Potter 3" >
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY70MaVViV3nExBogvi6xaCADJShzN6IuXN1nq5j5lXzmPiQSU" alt="Harry Potter 4" >
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhQ2j3ZmfGu-9lIEN6fNi7p-Yg4MYWZj-8jEVA8-_NTdHU6H0y" alt="Harry Potter 5" >
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_YgUStO6VlGMrQWEm5dQ0_NdO4GSaQiRgVUtHJUTmg2Tg8wDN" alt="Harry Potter 6" >
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_LkmLFq6w3LoWTTNm1NjrpX4nZEwJ5GXpSYxw1JSBzMCzqy9-" alt="Harry Potter 7" >
+
+
+{% endblock content %}
