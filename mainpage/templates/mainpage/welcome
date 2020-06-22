@@ -1,0 +1,75 @@
+{% extends "mainpage/home.html" %}
+{% block content %}
+<style>
+	    #Div{
+				font-size:45px;
+				position:relative;
+				width:auto;
+				padding-top:0px;
+				padding-left:5%;
+                color:#28313B;
+
+        }
+        ul{
+        	padding-left:1%;
+        }
+        li{
+                visibility: hidden;
+         		animation-duration: 1.5s;
+                animation-name: slide;
+                animation-iteration-count:1;
+                animation-fill-mode: forwards;
+                animation-timing-function: linear;
+         }
+         #jk{
+         	font-size:20px; margin:0px; animation:none;
+         	padding-left:2%;
+         }
+         li{
+            display:inline-block;
+            font-weight:bold;
+            margin: 0 5px;
+         }
+            @keyframes slide {
+                  from{
+                      transform: translateX(30px);
+                      visibility: visible;
+                       color:#CE203C;
+                      }
+                  to{
+                    transform: translateX(0px);
+                     visibility: visible;
+                   
+                     
+                  }
+                }
+                 @media screen and (max-width: 600px) {
+                                                    #Div{
+                                                        font-size:25px;
+                                                        animation:none;
+                                                        text-align:center;
+                                                        width:auto;
+                                                        margin:20px;
+
+                                                    }
+                                                    
+                                                }
+                  
+            
+
+</style>
+	<div id="Div" >
+		<ul class="we">
+			<li style="animation-delay:0.2s" >W</li>
+			<li style="animation-delay:0.4s">E</li>
+			<li style="animation-delay:0.6s">L</li>
+			<li style="animation-delay:0.8s">C</li>
+			<li style="animation-delay:1s">O</li>
+		    <li style="animation-delay:1.2s;">M</li>
+		    <li style="animation-delay:1.4s;">E</li>
+			<br>
+		</ul>
+		<p id="jk">“If you don’t like to read, you haven’t found the right book.” <br>- J.K. Rowling</p>
+		
+	</div>
+	{% endblock content %}
