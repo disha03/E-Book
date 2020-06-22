@@ -10,17 +10,19 @@
                 position:relative;
                 list-style-type:none;
                 overflow: hidden;
-                background-color: #333;
+                background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #04619f 86%);
                 margin:0px;
-                padding:3%;
-                padding-left:10%;
+                padding:2.5%;
+                padding-left:5%;
                 font-size: 27px;
                 text-decoration:inherit;
+                width:auto;
                 }
             .con{
                 color: white;
                 text-decoration:none;
-                margin:3%;
+                margin:2.5%;
                 }
             .con {
                 animation-duration: 1.5s;
@@ -31,20 +33,9 @@
 
             @keyframes slidein {
                   0% {
-                    margin:2%;
+                    margin:1.5%;
                   }
-                  25%{
-                    text-decoration: underline #ffdead dotted;
-                    
-                  }
-                  50%{
-                    text-decoration: underline #ffdead dotted;
-                    
-                  }
-                  75%{
-                    text-decoration: underline #ffdead solid;
-                    
-                  }
+                  
                   100%{
                     margin:1%;
                   }
@@ -55,28 +46,31 @@
                     padding:0.3%;
                     }
             footer{
-                position: fixed;
-                bottom: 0;
-                left:0;
+                position:fixed;
                 width:100%;
+                bottom:0;
                 font-size:15px;
                 float:none;
                 text-align:center;
                 padding:1%;
-                background-color: #333;
+                background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #04619f 100%);
                 overflow :hidden;
                 color:black;
+                margin-top:20px;
+                margin-bottom:0px;
 
             }
             .sub{
-                
+                  overflow:hidden;
                   float: right;
                   opacity: 70%;
                   border-width:0px;
                   border:none;
                   position:relative;
                 }
-            @media screen and (max-width: 800px) {
+
+            @media screen and (max-width: 600px) {
                                                     span{
                                                         position:relative;
                                                         text-align:center;
@@ -102,18 +96,26 @@
                                                         text-align:center;
                                                         transition:none;
                                                             }
-                                                    .con{
+                                                    .con {
                                                         animation:none;
+                                                        width:100%;
                                                     }
                                                     footer{
-                                                        font-size:10px;
+
+                                                        font-size:15px;
                                                         color:white;
+                                                        padding:10px;
+                                                        position:relative;
                                                     }
+                                                    
                                                 }
 
             body{
                 margin:0px;
-                background-image: url("https://journeysmobilevet.com/wp-content/uploads/2016/06/Background-light-grey.jpg");
+                background-color:#fdfcfa;
+                
+                background-image: url("https://journeysmobilevet.com/wp-content/uploads/2016/06/Background-light-grey.jpg")
+               
             }
             
         </style>
@@ -122,14 +124,15 @@
        <div>
         <ul class="ul">
             <span><a href="{% url 'mainpage' %}" class="con">Home</a></span>
-            <span><a href="#" class="con">Books</a></span>
+            <span><a href="{% url 'books' %}" class="con">Books</a></span>
             <span><a href="#contact"  class="con">Contact</a></span>
             <span ><a href="#about"  class="con">About</a></span>
             <span ><a href="{% url 'login' %}"  class="con"  >Login</a></span>
             <span ><a href="{% url 'register' %}"  class="con" >Signup</a></span>
-            <div class="sub"><input type="text" placeholder="Search.." style="padding:7px;" >
-            <button type="submit" style="padding:6px;"><a href="#">Go</a></button>
-        </div>
+            <div class="sub">
+                <input type="text" placeholder="Search.." style="padding:7px;" >
+                <button type="submit" style="padding:6px;"><a href="#">Go</a></button>
+            </div>
           </ul>
         </div>
         <br>
