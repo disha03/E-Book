@@ -103,7 +103,7 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 100%);
                                                     footer{
 
                                                         font-size:15px;
-                                                        color:white;
+                                                        color: white;
                                                         padding:10px;
                                                         position:relative;
                                                     }
