@@ -22,6 +22,6 @@
 <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhQ2j3ZmfGu-9lIEN6fNi7p-Yg4MYWZj-8jEVA8-_NTdHU6H0y" alt="Harry Potter 5" >
 <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_YgUStO6VlGMrQWEm5dQ0_NdO4GSaQiRgVUtHJUTmg2Tg8wDN" alt="Harry Potter 6" >
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_LkmLFq6w3LoWTTNm1NjrpX4nZEwJ5GXpSYxw1JSBzMCzqy9-" alt="Harry Potter 7" >
-
+</div>
 
 {% endblock content %}
