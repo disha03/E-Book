@@ -8,9 +8,10 @@
             
             .ul {
                 position:relative;
+                top:0;
                 list-style-type:none;
-                overflow: hidden;
                 background-color: #000000;
+                overflow:hidden;
 background-image: linear-gradient(147deg, #000000 0%, #04619f 86%);
                 margin:0px;
                 padding:2.5%;
@@ -25,19 +26,23 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 86%);
                 margin:2.5%;
                 }
             .con {
+                
                 animation-duration: 1.5s;
                 animation-name: slidein;
                 animation-iteration-count: 1;
                 animation-fill-mode:forwards;
+                animation-delay: 0s;
                 }
 
             @keyframes slidein {
                   0% {
                     margin:1.5%;
+                    
                   }
                   
                   100%{
                     margin:1%;
+                    
                   }
                 }
             .con:hover {
@@ -54,9 +59,9 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 86%);
                 text-align:center;
                 padding:1%;
                 background-color: #000000;
-background-image: linear-gradient(147deg, #000000 0%, #04619f 100%);
+                background-image: linear-gradient(147deg, #000000 0%, #04619f 100%);
                 overflow :hidden;
-                color: white;
+                color:black;
                 margin-top:20px;
                 margin-bottom:0px;
 
@@ -65,11 +70,10 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 100%);
                   overflow:hidden;
                   float: right;
                   opacity: 70%;
-                  border-width:0px;
                   border:none;
                   position:relative;
                 }
-
+            
             @media screen and (max-width: 600px) {
                                                     span{
                                                         position:relative;
@@ -88,7 +92,7 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 100%);
                                                       position:relative;
                                                        padding:1%;
                                                     }
-                                                    a:hover {
+                                                    .con:hover {
                                                         background-color: #111;
                                                         border:none;
                                                         border-bottom: 0.5px dotted white;
@@ -101,19 +105,19 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 100%);
                                                         width:100%;
                                                     }
                                                     footer{
-
+                                                        
                                                         font-size:15px;
-                                                        color: white;
-                                                        padding:10px;
-                                                        position:relative;
+                                                        color:white;
                                                     }
+                                                    
+
                                                     
                                                 }
 
             body{
                 margin:0px;
                 background-color:#fdfcfa;
-                
+
                 background-image: url("https://journeysmobilevet.com/wp-content/uploads/2016/06/Background-light-grey.jpg")
                
             }
