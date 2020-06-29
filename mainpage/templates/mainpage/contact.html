@@ -2,7 +2,34 @@
 {% block content %}
 <style >
 	.cus{
-		position:absolute;
+		font-size:30px;
+		padding:7%;
+        top:25%;
+	}
+	.query{
+		font-size:15px;
+		right:35%;
+		padding:7%;
+        top:12%;
+	}
+	.box{
+		margin-top:2%;
+		padding:2%;
+        overflow: visible;
+
+	}
+	.label{
+        font-size: 18px;
+		padding-right:5%;
+}
+    footer{
+		position:relative;
+		width:auto;
+		
+	}
+	@media screen and (min-width: 1200px) {
+		   .cus{
+		   	position:absolute;
 		font-size:30px;
 		padding:7%;
         top:25%;
@@ -24,11 +51,18 @@
         font-size: 18px;
 		padding-right:5%;
 	}
+	footer{
+		position:fixed;
+		bottom:0;
+		width: 100%;
+		
+	}
+		}
 </style>
 <h class="cus"><b>Contact Us</b></h>
 <div >
 	<form class="query">
-  <label for="fname" class="label">Subject :</label>
+  <label for="fname" class="label">Subject :</label><br>
   <input type="text"placeholder="Subject.." name="fname" size="50" class="box"><br><br>
   <label for="pin"  class="label">Your Name :</label><br>
   <input type="text" placeholder="Your Name.." name="pin"  size="50" class="box"><br><br>
