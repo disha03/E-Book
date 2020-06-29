@@ -1,6 +1,14 @@
 {% extends "mainpage/home.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
+<style>
+@media screen and (max-width: 600px) {
+	footer{
+		position:relative;
+		width:98%;
+		bottom:0%;
+	}
+</style>
 	<div >
 		<form method="POST">
 			{% csrf_token %}
