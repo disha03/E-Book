@@ -9,15 +9,16 @@
 	.query{
 		font-size:15px;
 		right:35%;
-		padding:7%;
-        top:12%;
-
+		padding:4%;
+		padding-left:7%;
+        top:6%;
+        
 	}
 	.box{
-		margin-top:2%;
-		padding:2%;
+		margin-top:1%;
+		padding:1%;
         overflow: visible;
-
+        width: auto;
 	}
 	.label{
         font-size: 18px;
@@ -29,15 +30,15 @@
 		
 	}
 	.row{
-
-        float:none;
-        text-align: center;
         width:auto;
-	}
-	.low{
-        
-	 	width:50px; height:auto; border-radius:20%;
+	
+	    margin-left:7%;
 	 }
+	 .low{
+	 	width:50px; height:auto; border-radius:20%;
+	 	
+	 }
+	
 	@media screen and (min-width: 1200px) {
 		   .cus{
 		   	position:absolute;
@@ -51,16 +52,19 @@
 	.query{
 		position:absolute;
 		font-size:15px;
-		right:35%;
+		right:40%;
 		padding:7%;
         top:12%;
 
 	}
 	.box{
+		position: relative;
+		width: 300px;
 		margin-top:2%;
 		padding:2%;
         overflow: visible;
-
+        columns: 50px;
+        
 	}
 	.label{
         font-size: 18px;
@@ -82,24 +86,25 @@
 	 	width:130px; height:auto; border-radius:20%;
 	 	
 	 }
+	 
 	 .low:hover  {
   transform: rotateY(360deg);
   transition: transform 1s;
   transform-style: preserve-3d;
-  tran
+  
 }
    }
 </style>
 <h class="cus"><b>Contact Us</b></h>
 	<form class="query">
   <label for="fname" class="label">Subject :</label><br>
-  <input type="text"placeholder="Subject.." name="fname" size="50" class="box"><br><br>
+  <input type="text"placeholder="Subject.." name="fname" class="box"><br><br>
   <label for="pin"  class="label">Your Name :</label><br>
-  <input type="text" placeholder="Your Name.." name="pin"  size="50" class="box"><br><br>
+  <input type="text" placeholder="Your Name.." name="pin"   class="box"><br><br>
   <label for="mail"  class="label">Your Mail :</label><br>
-  <input type="text" placeholder="Your Mail" name="mail" size="50" class="box"><br><br>
+  <input type="text" placeholder="Your Mail" name="mail" class="box"><br><br>
   <label for="message"  class="label">Your Message :</label><br>
-  <textarea placeholder="Message..." name="message"  class="box" rows="4" cols="47"></textarea><br><br>
+  <textarea placeholder="Message..." name="message" rows="4" class="box"></textarea><br><br>
   <input type="submit" value="Submit" style="padding:7px; font-size:15px; border-radius:20%; ">
 </form>
 <div class="row">
