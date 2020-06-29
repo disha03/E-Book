@@ -11,6 +11,7 @@
 		right:35%;
 		padding:7%;
         top:12%;
+
 	}
 	.box{
 		margin-top:2%;
@@ -27,12 +28,25 @@
 		width:auto;
 		
 	}
+	.row{
+
+        float:none;
+        text-align: center;
+        width:auto;
+	}
+	.low{
+        
+	 	width:50px; height:auto; border-radius:20%;
+	 }
 	@media screen and (min-width: 1200px) {
 		   .cus{
 		   	position:absolute;
-		font-size:30px;
+		font-size:50px;
 		padding:7%;
         top:25%;
+        width:auto;
+
+
 	}
 	.query{
 		position:absolute;
@@ -40,6 +54,7 @@
 		right:35%;
 		padding:7%;
         top:12%;
+
 	}
 	.box{
 		margin-top:2%;
@@ -51,16 +66,31 @@
         font-size: 18px;
 		padding-right:5%;
 	}
-	footer{
-		position:fixed;
-		bottom:0;
-		width: 100%;
-		
-	}
-		}
+	 footer{
+	 	width:100%;
+	 	position:fixed;
+
+	 }
+	 .row{
+        width:auto;
+	 	margin-right:3%;
+	 	float:right;
+        margin-top:4%;
+        border-width: 10%;
+	 }
+	 .low{
+	 	width:130px; height:auto; border-radius:20%;
+	 	
+	 }
+	 .low:hover  {
+  transform: rotateY(360deg);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  tran
+}
+   }
 </style>
 <h class="cus"><b>Contact Us</b></h>
-<div >
 	<form class="query">
   <label for="fname" class="label">Subject :</label><br>
   <input type="text"placeholder="Subject.." name="fname" size="50" class="box"><br><br>
@@ -72,6 +102,11 @@
   <textarea placeholder="Message..." name="message"  class="box" rows="4" cols="47"></textarea><br><br>
   <input type="submit" value="Submit" style="padding:7px; font-size:15px; border-radius:20%; ">
 </form>
-
+<div class="row">
+    <a href="https://www.facebook.com/profile.php?id=100006227111299"><img src="https://c7.uihere.com/files/353/468/986/menlo-park-facebook-social-media-computer-icons-social-networking-service-facebook-new-logo-png-thumb.jpg" alt="Snow" class="low"></a>
+    <img src="https://lh3.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN"  alt="Forest" class="low"><br>
+    <img src="https://lh3.googleusercontent.com/2sREY-8UpjmaLDCTztldQf6u2RGUtuyf6VT5iyX3z53JS4TdvfQlX-rNChXKgpBYMw " alt="Mountains"class="low">
+    <img src="https://lh3.googleusercontent.com/x3XxTcEYG6hYRZwnWAUfMavRfNNBl8OZweUgZDf2jUJ3qjg2p91Y8MudeXumaQLily0 " alt="Mountains" class="low"><br>
 </div>
+
 {% endblock content %}
