@@ -7,3 +7,6 @@ def welcome(request):
 
 def books(request):
 	return render(request, 'mainpage/books.html')
+
+def contact(request):
+	return render(request, 'mainpage/contact.html')

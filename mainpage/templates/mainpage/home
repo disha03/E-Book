@@ -129,7 +129,7 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 86%);
         <ul class="ul">
             <span><a href="{% url 'mainpage' %}" class="con">Home</a></span>
             <span><a href="{% url 'books' %}" class="con">Books</a></span>
-            <span><a href="#contact"  class="con">Contact</a></span>
+            <span><a href="{% url 'contact' %}"  class="con">Contact</a></span>
             <span ><a href="#about"  class="con">About</a></span>
             <span ><a href="{% url 'login' %}"  class="con"  >Login</a></span>
             <span ><a href="{% url 'register' %}"  class="con" >Signup</a></span>

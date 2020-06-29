@@ -1,0 +1,43 @@
+{% extends "mainpage/home.html" %}
+{% block content %}
+<style >
+	.cus{
+		position:absolute;
+		font-size:30px;
+		padding:7%;
+        top:25%;
+	}
+	.query{
+		position:absolute;
+		font-size:15px;
+		right:35%;
+		padding:7%;
+        top:12%;
+	}
+	.box{
+		margin-top:2%;
+		padding:2%;
+        overflow: visible;
+
+	}
+	.label{
+        font-size: 18px;
+		padding-right:5%;
+	}
+</style>
+<h class="cus"><b>Contact Us</b></h>
+<div >
+	<form class="query">
+  <label for="fname" class="label">Subject :</label>
+  <input type="text"placeholder="Subject.." name="fname" size="50" class="box"><br><br>
+  <label for="pin"  class="label">Your Name :</label><br>
+  <input type="text" placeholder="Your Name.." name="pin"  size="50" class="box"><br><br>
+  <label for="mail"  class="label">Your Mail :</label><br>
+  <input type="text" placeholder="Your Mail" name="mail" size="50" class="box"><br><br>
+  <label for="message"  class="label">Your Message :</label><br>
+  <textarea placeholder="Message..." name="message"  class="box" rows="4" cols="47"></textarea><br><br>
+  <input type="submit" value="Submit" style="padding:7px; font-size:15px; border-radius:20%; ">
+</form>
+
+</div>
+{% endblock content %}
