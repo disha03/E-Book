@@ -10,3 +10,6 @@ def books(request):
 
 def contact(request):
 	return render(request, 'mainpage/contact.html')
+
+def about(request):
+	return render(request, 'mainpage/about.html')
