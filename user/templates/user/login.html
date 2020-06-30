@@ -2,6 +2,7 @@
 {% load crispy_forms_tags %}
 {% block content %}
 <style >
+	 <style >
 	 @media screen and (max-width: 600px) {
 	footer{
 		position:absolute;
@@ -9,6 +10,7 @@
 		bottom:0%;
 	}
 }
+</style>
 	<div class="content-section">
 		<form method="POST">
 			{% csrf_token %}
