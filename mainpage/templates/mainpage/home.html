@@ -24,6 +24,8 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 86%);
                 color: white;
                 text-decoration:none;
                 margin:2.5%;
+                padding: 0.3%;
+                
                 }
             .con {
                 
@@ -46,9 +48,10 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 86%);
                   }
                 }
             .con:hover {
-                    background-color: #111;
+                    background-color: black;
                     text-align:center;
                     padding:0.3%;
+                    border-radius:10px;
                     }
             footer{
                 position:fixed;
@@ -97,14 +100,17 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 86%);
                                                     .con:hover {
                                                         background-color: #111;
                                                         border:none;
+                                                        border-radius:10px;
                                                         border-bottom: 0.5px dotted white;
                                                         padding:2px;
+                                                        padding:0.3%;
                                                         text-align:center;
                                                         transition:none;
                                                             }
                                                     .con {
                                                         animation:none;
                                                         width:100%;
+                                                        padding:0.3%;
                                                     }
                                                     footer{
                                                         font-size:15px;
@@ -129,12 +135,12 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 86%);
         
        <div>
         <ul class="ul">
-            <span><a href="{% url 'mainpage' %}" class="con">Home</a></span>
-            <span><a href="{% url 'books' %}" class="con">Books</a></span>
-            <span><a href="{% url 'contact' %}"  class="con">Contact</a></span>
-            <span ><a href="#about"  class="con">About</a></span>
-            <span ><a href="{% url 'login' %}"  class="con"  >Login</a></span>
-            <span ><a href="{% url 'register' %}"  class="con" >Signup</a></span>
+            <span><a href="{% url 'mainpage' %}" id="home" class="con">Home</a></span>
+            <span><a href="{% url 'books' %}" class="con" id="book">Books</a></span>
+            <span><a href="{% url 'contact' %}" id="contact" class="con">Contact</a></span>
+            <span ><a href="#about" id="about" class="con">About</a></span>
+            <span ><a href="{% url 'login' %}" id="login" class="con"  >Login</a></span>
+            <span ><a href="{% url 'register' %}" id="signup" class="con" >Signup</a></span>
             <div class="sub">
                 <input type="text" class="Button" placeholder="Search.." style="padding:7px; border-radius: 10px; border: 1px;" >
                 <button type="submit" class="Button" style="padding:6px; border: 1px; border-radius: 10px; "><a href="#" style="text-decoration-line: none;">Go</a></button>
