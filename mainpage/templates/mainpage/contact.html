@@ -38,6 +38,9 @@
 	 	width:50px; height:auto; border-radius:20%;
 	 	
 	 }
+	  .Button:focus {
+  outline: none;
+}
 	 @media screen and (min-width: 1000px){
 footer{
 	 	position:fixed;
@@ -96,7 +99,10 @@ footer{
   transform: rotateY(360deg);
   transition: transform 1s;
   transform-style: preserve-3d;
-  
+  transition-duration: 3s;
+}
+ .Button:focus {
+  outline: none;
 }
    }
 </style>
@@ -110,7 +116,7 @@ footer{
   <input type="text" placeholder="Your Mail" name="mail" class="box"><br><br>
   <label for="message"  class="label">Your Message :</label><br>
   <textarea placeholder="Message..." name="message" rows="4" class="box"></textarea><br><br>
-  <input type="submit" value="Submit" style="padding:7px; font-size:15px; border-radius:20%; ">
+  <input type="submit" value="Submit" class="Button" style="padding:7px; font-size:15px; border-radius:20%; ">
 </form>
 <div class="row">
     <a href="https://www.facebook.com/profile.php?id=100006227111299"><img src="https://c7.uihere.com/files/353/468/986/menlo-park-facebook-social-media-computer-icons-social-networking-service-facebook-new-logo-png-thumb.jpg" alt="Snow" class="low"></a>

@@ -73,7 +73,9 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 86%);
                   border:none;
                   position:relative;
                 }
-            
+            .Button:focus {
+  outline: none;
+}
             @media screen and (max-width: 600px) {
                                                     span{
                                                         position:relative;
@@ -134,8 +136,8 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 86%);
             <span ><a href="{% url 'login' %}"  class="con"  >Login</a></span>
             <span ><a href="{% url 'register' %}"  class="con" >Signup</a></span>
             <div class="sub">
-                <input type="text" placeholder="Search.." style="padding:7px;" >
-                <button type="submit" style="padding:6px;"><a href="#">Go</a></button>
+                <input type="text" class="Button" placeholder="Search.." style="padding:7px; border-radius: 10px; border: 1px;" >
+                <button type="submit" class="Button" style="padding:6px; border: 1px; border-radius: 10px; "><a href="#" style="text-decoration-line: none;">Go</a></button>
             </div>
           </ul>
         </div>
